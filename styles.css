@@ -104,9 +104,14 @@ input::placeholder {
   font-size: 1rem;
   padding: 0.5rem 1rem;
   margin: 0.2rem 0;
+  transition: all 0.2s ease-out;
   text-align: center;
   text-transform: capitalize;
   width: calc(50% - 0.2rem);
+}
+
+.btn:active {
+  transform: scale(0.97);
 }
 
 .tip-content .btn:last-child {
@@ -172,4 +177,10 @@ input::placeholder {
   padding: 0.5rem;
   text-transform: uppercase;
   width: 100%;
+}
+
+.resultContainer .btn:hover,
+.resultContainer .btn:active {
+  background-color: var(--clr-dark-cyan-2);
+  color: var(--clr-primary);
 }
