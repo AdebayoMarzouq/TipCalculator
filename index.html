@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>SPLI<br>TTER</h1>
+  </header>
+  <main>
+    <div class="bill">
+      <p class="header">Bill</p>
+      <input id="billInput" type="text" placeholder="0" />
+    </div>
+
+    <div class="tip-container">
+      <p class="header">Select Tip %</p>
+      <ul class="tip-content">
+        <li class="btn">5%</li>
+        <li class="btn">10%</li>
+        <li class="btn">15%</li>
+        <li class="btn">25%</li>
+        <li class="btn">50%</li>
+        <li class="btn">Custom</li>
+      </ul>
+    </div>
+
+    <div class="people">
+      <p class="header">Number of People</p>
+      <input id="peopleInput" type="text" placeholder="1" />
+    </div>
+
+    <div class="resultContainer">
+      <div>
+        <p class="tip-text">Tip Amount <span>/ person</span></p>
+        <p class="tip-amount">$4.27</p>
+      </div>
+      <div>
+        <p class="tip-text">Total <span>/ person</span></p>
+        <p class="tip-amount">$32.79</p>
+      </div>
+      <button class="btn">Reset</button>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a
+        href="#">Marzouq Adebayo</a>.
+    </div>
+  </main>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>

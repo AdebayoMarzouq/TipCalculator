@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+:root {
+  --clr-primary: hsl(172, 67%, 45%);
+  --clr-dark-cyan-2: hsl(183, 100%, 15%);
+  --clr-dark-cyan-1: hsl(186, 14%, 43%);
+  --clr-grayish-cyan-3: hsl(184, 14%, 56%);
+  --clr-grayish-cyan-2: hsl(185, 41%, 84%);
+  --clr-grayish-cyan-1: hsl(189, 41%, 97%);
+  --clr-white: hsl(0, 0%, 100%);
+  --font-form: 24px;
+}
+
+html {
+  font-size: var(--font-form);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Space Mono', monospace;
+  background-color: var(--clr-grayish-cyan-2);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+h1 {
+  text-align: center;
+  color: var(--clr-dark-cyan-2);
+  font-size: 1rem;
+  letter-spacing: 0.5rem;
+}
+
+header {
+  align-items: center;
+  display: flex;
+  height: 15vh;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+p.header {
+  color: var(--clr-dark-cyan-1);
+  font-size: 0.6rem;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+button:focus,
+button:hover {
+  outline: 0;
+  border: 0;
+}
+
+main {
+  background-color: var(--clr-white);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 85vh;
+  padding: 1rem 1.5rem;
+}
+
+input {
+  border: none;
+  background-color: var(--clr-grayish-cyan-1);
+  border-radius: 5px;
+  color: var(--clr-dark-cyan-2);
+  padding: 0.2rem 0.5rem;
+  font-size: 1rem;
+  font-family: inherit;
+  text-align: right;
+  width: 100%;
+}
+
+input:focus {
+  outline: none;
+}
+
+input::placeholder {
+  color: var(--clr-grayish-cyan-2);
+}
+
+.btn {
+  background-color: var(--clr-dark-cyan-2);
+  border-radius: 5px;
+  color: var(--clr-grayish-cyan-1);
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  margin: 0.2rem 0;
+  text-align: center;
+  text-transform: capitalize;
+  width: calc(50% - 0.2rem);
+}
+
+.tip-content .btn:last-child {
+  background-color: var(--clr-grayish-cyan-1);
+  color: var(--clr-dark-cyan-1)
+}
+
+.btn:hover,
+.btn:active {
+  background-color: var(--clr-primary);
+  color: var(--clr-dark-cyan-2);
+}
+
+.container {
+  margin: 0 1rem;
+}
+
+/*Bill form styles*/
+
+/*Tip select button styles*/
+.tip-content {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+}
+
+/*Result container styles*/
+.resultContainer {
+  background-color: var(--clr-dark-cyan-2);
+  border-radius: 10px;
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem 0.5rem 0.5rem;
+}
+
+.resultContainer div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.resultContainer .tip-text {
+  font-size: 0.8rem;
+  color: var(--clr-white);
+}
+
+.resultContainer .tip-text span {
+  font-size: 0.6rem;
+  color: var(--clr-grayish-cyan-3);
+  display: block;
+}
+
+.resultContainer .tip-amount {
+  font-size: 1.4rem;
+  color: var(--clr-primary);
+}
+
+.resultContainer .btn {
+  background-color: var(--clr-primary);
+  color: var(--clr-dark-cyan-2);
+  padding: 0.5rem;
+  text-transform: uppercase;
+  width: 100%;
+}
