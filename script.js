@@ -75,6 +75,7 @@ customTipPercent.addEventListener('input', (e) => {
 reset.addEventListener('click', () => resetVals())
 
 function calculateTip(bill, percent, people) {
+  reset.disabled = false
   if (error) {
     return
   }
@@ -92,6 +93,7 @@ function updateTip(tipPerPerson, billPerPerson) {
 }
 
 function resetVals() {
+  reset.disabled = true
   bill.value = ''
   people.value = ''
   customTipPercent.value = ''

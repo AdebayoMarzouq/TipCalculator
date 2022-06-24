@@ -211,6 +211,7 @@ input[type=number] {
 .form-group input#customInput.btn[type=number] {
   /*Agressive  much? haha :)*/
   background-color: var(--clr-grayish-cyan-1);
+  color: var(--clr-dark-cyan-2);
   text-align: right;
   width: calc(50% - 0.2rem);
 }
@@ -273,12 +274,29 @@ input[type=number] {
   padding: 0.5rem;
   text-transform: uppercase;
   width: 100%;
+  transition: all 0.2s linear;
+}
+
+.display .btn:disabled {
+  color: var(--clr-dark-cyan-2);
+  background-color: var(--clr-dark-cyan-1);
+  transform: scale(1);
+}
+
+.display .btn:disabled:hover,
+.display .btn:disabled:hover {
+  color: var(--clr-dark-cyan-2);
+  background-color: var(--clr-dark-cyan-1);
+  border: none;
+  transform: scale(1);
 }
 
 .display .btn:hover,
 .display .btn:active {
-  background-color: var(--clr-dark-cyan-2);
+  background-color: transparent;
   color: var(--clr-primary);
+  border: 2px solid var(--clr-primary);
+  transform: scale(0.98);
 }
 
 div.container {
@@ -356,6 +374,7 @@ object {
 
 @media screen and (min-width: 768px) {
   .attribution {
+    position: absolute;
     bottom: 1rem;
   }
 }
